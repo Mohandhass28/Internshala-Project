@@ -1,0 +1,51 @@
+.fadein_btn {
+  position: relative;
+  padding: 1rem 2rem;
+  background: transparent;
+  border-radius: 35px;
+  background: linear-gradient(
+    to left,
+    rgba(56, 239, 125, 1) 0%,
+    rgba(17, 153, 142, 1) 100%
+  );
+  border: 3px solid rgba(56, 239, 125, 1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-clip: border;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  /* margin-top: 1.4rem; */
+  cursor: pointer;
+}
+.icon_container {
+  position: absolute;
+  background: linear-gradient(
+    to left,
+    rgba(56, 239, 125, 1) 0%,
+    rgba(17, 153, 142, 1) 100%
+  );
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  right: -57px;
+  top: 0;
+  transition: all 1s ease;
+  
+}
+.rotate_icon{
+    transform: rotate(-50deg);
+    transition: all 1s ease;
+}
+
+.fadein_btn:hover{
+    .icon_container{
+        width: 100%;
+        right: 0;
+    }
+    .rotate_icon{
+        transform: rotate(0deg);
+    }
+}
