@@ -1,0 +1,58 @@
+.user_images {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    max-height: 9rem;
+    justify-content: center;
+    place-content: center;
+}
+
+.dropimg_text {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.img_container {
+  display: flex;
+  align-items: center;
+}
+
+.img_container img {
+  width: 56px;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.client_text {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #9d9494;
+  /* padding: 0 3rem 0 0rem; */
+}
+
+.img_container img:hover {
+  transform: translateX(-15px);
+}
+
+.img_container img:nth-child(1) {
+  position: relative;
+  left: 30px;
+}
+.img_container img:nth-child(2) {
+  position: relative;
+  left: 0px;
+}
+.img_container img:nth-child(3) {
+  position: relative;
+  width: 62px;
+  right: 30px;
+}
+.img_container img:nth-child(4) {
+  position: relative;
+  right: 60px;
+}
+
+.client_text-para{}

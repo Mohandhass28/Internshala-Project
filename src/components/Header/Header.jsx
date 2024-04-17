@@ -2,6 +2,7 @@ import "./Header.css";
 import profile from "../../assets/images/image.png";
 import { BsArrowRightShort } from "react-icons/bs";
 import FadeinButton from "../../components/Buttons/FadeinButton/FadeinButton"
+import UserLogo from "../UserLogo/UserLogo";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
       <div className="home">
         <div className="back_ground-img">
           <img src={profile} alt="profile" height={690} width={690} />
-          <div className="user_images">
+          {/* <div className="user_images">
             <div className="dropimg_text">
               <div className="img_container">
                 <img src="src/assets/images/Ellipse 3.png" alt="" />
@@ -19,7 +20,8 @@ const Header = () => {
               </div>
               <span className="client_text">Clients Satisfaction</span>
             </div>
-          </div>
+          </div> */}
+          <UserLogo />
         </div>
         <div className="text_content">
           <div className="hearer">
